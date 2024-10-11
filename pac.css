@@ -1,0 +1,52 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    font-family: "Share Tech", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+
+body {
+    background-image: url('img/fundo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.par {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 150px;
+}
+
+.menu li {
+    margin: 36%;
+}
+
+.menu li a {
+    background-color: rgb(109, 0, 0);
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+}
