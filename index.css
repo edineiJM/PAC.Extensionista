@@ -1,8 +1,7 @@
-*{ 
-    margin: 0px;
-    padding: 0px;
+* { 
+    margin: 0;
+    padding: 0;
     font-family: "Share Tech", sans-serif;
-    font-style: normal;
     font-size: 18px;
 }
 
@@ -20,33 +19,43 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
- 
+
 .menu {
     display: flex;
     justify-content: center;
-    margin: 150px;
+    margin: 50px 0;
+}
+
+.menu ul {
+    display: block;
+    list-style: none;
 }
 
 .menu li {
-    margin: 36%;
+    margin: 70px 10px;
 }
 
 .menu li a {
     background-color: rgb(109, 0, 0);
-    font-size: 24px;
+    font-size: 30px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: yellow;
 }
 
 footer {
     background-color: black;
     color: rgb(255, 255, 255);
-    align-items: center;
     text-align: center;
+    padding: 20px;
     font-size: larger;
 }
