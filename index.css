@@ -34,7 +34,7 @@ body {
 }
 
 .header-logo {
-    width: 4%;
+    width: 110px;
 }
 
 .header-links {
@@ -52,7 +52,7 @@ body {
 }
 
 .header-btn:hover {
-    color: rgb(104, 1, 136);
+    color: rgb(255, 0, 0);
 }
 
 .menu {

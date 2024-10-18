@@ -17,25 +17,65 @@
                     <img src="img/novlogo.png" alt="Logo" class="header-logo">
                     <div class="header-links">
                         <a href="index.html" class="header-btn">Home</a>
-                        <a href="#" class="header-btn">Sobre o Pac</a>
+                        <a href="jogos.html" class="header-btn">Jogos</a>
+                        <a href="ativ.html" class="header-btn">Atividades</a>
                     </div>
                 </div>
             </header>
 
     <div class="interface">
         <section class="page1">
-            <h1>página 1</h1>
-        
+            <h1>Introdução à Linguagem C</h1>
+            <p>Vamos explorar a introdução à linguagem C e o passo a passo para aprender essa linguagem fundamental. A linguagem C é uma das mais influentes e amplamente utilizadas na programação, especialmente para desenvolvimento de sistemas e aplicativos de baixo nível. <br>
+                Introdução à Linguagem C
+ 
+A linguagem C foi criada por Dennis Ritchie na década de 1970 nos Laboratórios Bell. É conhecida por sua eficiência e controle de baixo nível sobre hardware, o que a torna ideal para sistemas operacionais, compiladores e aplicações que requerem desempenho.
+
+            </p>
 
         </section>
+
         <section class="page2">
-            <h1>página 2</h1>
-            
+            <h1>Coleta de Informações</h1>
+
+            <p>Para coletar informações para após poder utiliza-lá ou imprimi-la na tela vamos ter que solicitar a informação que precisamos
+                Sempre seguindo este padrão scanf(“x”, &y);  onde x é o tipo da variável utilizada e y o nome atribuído a variavel
+                Printf(“Digite seu nome\n”); //neste caso estamos apenas imprimindo na tela a frase Digite seu nome.
+                Para escanear uma a informação que o usuário informou, vamos utilizar o scanf da seguinte forma
+                Scanf(“%s”, &nomedavariavel); //neste caso coletamos a informação e armazenamos na variável char de nome: nomedavariavel, assim, podemos solicitar que seja impresso na tela o dado coletado da seguinte forma
+                Printf(“O nome informado foi %s”, nomedavariavel); //aqui ira imprimir o nome informado pelo usuário, lembrando que o nome da variável fica a critério do programador, mas sempre utilizando da logica e usando nomes coerentes para fácil entendimento do programador (nem sempre você programará sozinho, se estiver em alguma empresa, todos que tiverem acesso ao código fonte devem entender tudo o que você fez)
+                Também podemo coletar informações do tipo int e float da mesma maneira
+                Printf(“Digite sua idade”);
+                Scanf(“%i”, &numero2); // perceba que aqui o ideal seria utilizar uma variável de nome idade, pois você solicitou idade.
+                Printf(“Digite sua altura”);
+                Scanf(“%f”, &numero1); // aqui novamente, não ficaria melhor definirmos a variável como altura?
+                Agora com os dados de Altura e Idade coletados, vamos imprimi-los na tela
+                Printf(“A idade é: %i, e a altura é %f”, numero2, numero1); //aqui novamente utilizamos o nome da variável atribuída; claro que ficaria mais fácil se tivéssemos chamado la no inico de idade e altura, mas o nome da variável é indiferente, ela apenas precisa ser chamada pelo mesmo nome em todos os casos.</p>
+
         </section>
+
         <section class="page3">
-            <h1>página 3</h1>
+
+            <h1>Condicional</h1>
+            <p> Agora vamos para condicional, que ira verificar se a informação obedece uma instrução, efetue uma sequencia de códigos, caso contrario, faca outra, veja no exemplo a seguir
+                Vamos utilizar sempre if (verifica se) ou else (para caso a informação se não seja atendida)
+                Vamos solicitar a idade de uma pessoa, se ela for maior de 18 anos, o programa deve imprimir MAIOR DE IDADE, caso contrario, MENOR DE IDADE.
+                {
+                Int idade;
+                Printf(“Digite sua idade”);
+                Scanf(“%i”, &idade);
+                
+                If (idade>=18)
+                Printf(“MAIOR DE IDADE”);
+                Else
+                Printf(“MENOR DE IDADE”);
+                Return 0;
+                }
+                Então nesse caso, ele ira solicitar a idade, e verificar se a idade informada é maior ou igual a 18,
+                e ira imprimir MAIOR DE IDADE, caso contrario MENOR DE IDADE.</p>
             
         </section>
+            
         <section class="page4">
             <h1>página 4</h1>
             
