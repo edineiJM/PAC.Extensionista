@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-image: url('img/paisagem.png');
+    background-image: url('img/forest-background-test.webp');
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -13,6 +21,8 @@ body {
     background-color: rgb(0, 0, 0);
     padding: 10px 0;
     text-align: center;
+    top: 0;
+    left: 0;
 }
 
 .header-content {
@@ -41,7 +51,7 @@ body {
 }
 
 .header-btn:hover {
-    color: yellow;
+    color: rgb(171, 44, 225);
 }
 
 .menu {
@@ -57,12 +67,6 @@ body {
     margin: 0 auto;
 }
 
-.menu h1 {
-    font-size: 100px;
-    font-weight: 600;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    margin: 10px 0;
-}
 
 .menu .list {
     display: flex;
@@ -78,14 +82,17 @@ body {
     font-size: 1rem;
     padding: 20px 20px;
     margin: 8px;
-    background-color: rgb(3, 0, 182);
+    background-color: rgb(8, 1, 9);
     color: #ffffff;
     transition: background-color 0.3s;
     text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
 }
 
 .menu .u-btn:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.03);
 }
 
 .footer {
@@ -101,4 +108,21 @@ body {
     font-size: 25px;
     margin: none;
     color: rgb(0, 0, 0);
+}
+.title{
+    font-size: 135px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #000000, #ffffff,#000000);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes degrade {
+    0%{
+        background-position-x:0% ;
+    }    
+    100%{
+        background-position:400% ;
+    }
 }
