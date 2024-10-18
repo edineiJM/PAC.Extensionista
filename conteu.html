@@ -28,33 +28,61 @@
             <h1>Introdução à Linguagem C</h1>
             <p>Vamos explorar a introdução à linguagem C e o passo a passo para aprender essa linguagem fundamental. A linguagem C é uma das mais influentes e amplamente utilizadas na programação, especialmente para desenvolvimento de sistemas e aplicativos de baixo nível. <br>
                 Introdução à Linguagem C
- 
-A linguagem C foi criada por Dennis Ritchie na década de 1970 nos Laboratórios Bell. É conhecida por sua eficiência e controle de baixo nível sobre hardware, o que a torna ideal para sistemas operacionais, compiladores e aplicações que requerem desempenho.
-
+                
+                A linguagem C foi criada por Dennis Ritchie na década de 1970 nos Laboratórios Bell. É conhecida por sua eficiência e controle de baixo nível sobre hardware, o que a torna ideal para sistemas operacionais, compiladores e aplicações que requerem desempenho.
+                
             </p>
-
+            
         </section>
-
         <section class="page2">
+            <h1>Biblioteca Basica</h1>
+            <p>Em C, as bibliotecas são coleções de funções e macros que podem ser usadas para realizar várias operações, como manipulação de strings, operações matemáticas, controle de entrada/saída, manipulação de arquivos, entre outras. Elas ajudam a evitar que os programadores tenham que reinventar a roda ao criar código para funcionalidades comuns. <br>
+        
+                Aqui estão algumas das bibliotecas básicas mais utilizadas na linguagem C: <br>
+                
+                1. <stdio.h> (Standard Input/Output Library) <br>
+                A biblioteca padrão para entrada e saída. Ela fornece funções para leitura e escrita de dados. <br>
+                
+                Funções principais: <br>
+                printf: Escreve dados na saída padrão (geralmente a tela). <br>
+                scanf: Lê dados da entrada padrão (geralmente o teclado). <br>
+                fprintf: Escreve dados em um arquivo ou stream específico. <br>
+                fscanf: Lê dados de um arquivo ou stream específico. <br>
+                fopen, fclose: Abre e fecha arquivos. <br>
+                fread, fwrite: Lê e escreve dados binários em arquivos. <br>
+                fgets, fputs: Lê e escreve strings em arquivos. <br>
+                </p>
+        
+        </section>
+        
+        <section class="page3">
             <h1>Coleta de Informações</h1>
-
-            <p>Para coletar informações para após poder utiliza-lá ou imprimi-la na tela vamos ter que solicitar a informação que precisamos
-                Sempre seguindo este padrão scanf(“x”, &y);  onde x é o tipo da variável utilizada e y o nome atribuído a variavel
-                Printf(“Digite seu nome\n”); //neste caso estamos apenas imprimindo na tela a frase Digite seu nome.
-                Para escanear uma a informação que o usuário informou, vamos utilizar o scanf da seguinte forma
-                Scanf(“%s”, &nomedavariavel); //neste caso coletamos a informação e armazenamos na variável char de nome: nomedavariavel, assim, podemos solicitar que seja impresso na tela o dado coletado da seguinte forma
-                Printf(“O nome informado foi %s”, nomedavariavel); //aqui ira imprimir o nome informado pelo usuário, lembrando que o nome da variável fica a critério do programador, mas sempre utilizando da logica e usando nomes coerentes para fácil entendimento do programador (nem sempre você programará sozinho, se estiver em alguma empresa, todos que tiverem acesso ao código fonte devem entender tudo o que você fez)
-                Também podemo coletar informações do tipo int e float da mesma maneira
-                Printf(“Digite sua idade”);
-                Scanf(“%i”, &numero2); // perceba que aqui o ideal seria utilizar uma variável de nome idade, pois você solicitou idade.
-                Printf(“Digite sua altura”);
-                Scanf(“%f”, &numero1); // aqui novamente, não ficaria melhor definirmos a variável como altura?
-                Agora com os dados de Altura e Idade coletados, vamos imprimi-los na tela
-                Printf(“A idade é: %i, e a altura é %f”, numero2, numero1); //aqui novamente utilizamos o nome da variável atribuída; claro que ficaria mais fácil se tivéssemos chamado la no inico de idade e altura, mas o nome da variável é indiferente, ela apenas precisa ser chamada pelo mesmo nome em todos os casos.</p>
+            
+            <p>Tipos de Dados <br>
+                int: Números inteiros (ex: 5, -3). <br>
+                float: Números com ponto decimal (ex: 3.14). <br>
+                char: Um único caractere (ex: 'a'). <br>
+                double: Números com mais precisão <br>
+                
+                Para coletar informações do usuário em um programa e usá-las depois, precisamos pedir essas informações de uma forma específica. Para isso, usamos algo chamado scanf, que segue o padrão scanf("x", &y);. Aqui, x representa o tipo de dado que queremos coletar, como texto ou números, e y é o nome da caixinha (variável) onde vamos guardar essa informação.</p>
 
         </section>
 
-        <section class="page3">
+        <section class="page4">
+            <h1>Declaração de variável</h1>
+            <p>Declarar variáveis em programação é como dar nome a caixinhas onde guardamos diferentes tipos de informações. Cada caixinha tem um nome e um tipo específico de coisa que pode guardar, como números inteiros, números com vírgula ou palavras.
+
+                Por exemplo, se você quiser guardar a idade de alguém, que é um número inteiro, você cria uma caixinha do tipo int e dá a ela um nome, como idade. Assim, você diz ao computador que aquela caixinha vai guardar um número inteiro. Da mesma forma, se quiser guardar uma altura, que pode ter vírgula (como 1.75), você usa uma caixinha do tipo float. E, se precisar guardar o nome de uma pessoa, você usa uma caixinha chamada char, que é usada para armazenar letras ou uma sequência de letras.
+                
+                Depois de criar as caixinhas, você pode colocar valores nelas. Se você declarou uma variável chamada idade, pode guardar o valor 10 nela. Da mesma forma, se você declarou uma variável chamada altura, pode guardar o valor 1.75. Essas informações podem ser usadas pelo programa sempre que precisar.
+                
+                No final das contas, declarar variáveis é basicamente dizer ao computador: "Ei, eu vou precisar guardar essa informação aqui, e é desse tipo, então crie um espaço para ela!". Isso ajuda o computador a organizar e usar as informações de maneira eficiente durante o programa.
+                
+                
+                
+                </p>
+        </section>
+        <section class="page5">
 
             <h1>Condicional</h1>
             <p> Agora vamos para condicional, que ira verificar se a informação obedece uma instrução, efetue uma sequencia de códigos, caso contrario, faca outra, veja no exemplo a seguir
@@ -76,14 +104,31 @@ A linguagem C foi criada por Dennis Ritchie na década de 1970 nos Laboratórios
             
         </section>
             
-        <section class="page4">
-            <h1>página 4</h1>
-            
-        </section>
-        <section class="page5">
-            <h1>página 5</h1>
+        <section class="page6">
+            <h1>Laços de repetição</h1>
+            <p>Os laços de repetição são ferramentas fundamentais na programação que permitem que um computador execute um bloco de código várias vezes sem precisar reescrever o mesmo código repetidamente. Eles são muito úteis quando precisamos repetir uma ação, seja um número fixo de vezes ou até que uma condição específica seja atendida.
+
+                Existem três tipos principais de laços em C:
+                
+                Laço for: Este laço é ideal quando sabemos exatamente quantas vezes queremos repetir uma ação. Ele possui três partes principais: o ponto de partida (onde a repetição começa), a condição (que determina quando o laço deve parar) e a atualização (que ajusta a variável de controle a cada repetição). O laço for é eficiente e fácil de entender, pois todos esses elementos estão reunidos em uma única linha.
+                
+                Laço while: Este tipo de laço é usado quando não sabemos exatamente quantas vezes vamos repetir a ação, mas sabemos que queremos continuar enquanto uma condição for verdadeira. O laço while verifica essa condição antes de executar o código dentro dele. Isso significa que, se a condição for falsa desde o início, o código dentro do laço não será executado nem uma vez.
+                
+                Laço do...while: O laço do...while é semelhante ao while, mas com uma diferença importante: ele garante que o bloco de código seja executado pelo menos uma vez. Isso ocorre porque a condição é verificada após a execução do código. Portanto, mesmo que a condição seja falsa logo no início, o código dentro do laço será executado uma vez antes que a verificação aconteça.</p>
 
         </section>
+        <section class="page7">
+            <h1>Conteúdo adicional</h1>
+            <p>Video para aprofundar conhecimentos adicionais: <br>
+                <ul>
+                    <li><a href="https://youtu.be/2w8GYzBjNj8?si=pxnrY2Jq858il_iP">Video de introdução à linguagem C</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=QgE1zh0xCns ">Como utilizar a ferramenta DEV C++ </a></li>
+                    <li><a href="https://www.youtube.com/watch?v=eK9lfMmkDe0&list=PLpaKFn4Q4GMOBAeqC1S5_Fna_Y5XaOQS2&index=4">Aprenda a mostrar mensagens em liguagem C</a></li>
+                </ul>
+            </p>
+
+        </section>
+
     </div>
 </body>
 
