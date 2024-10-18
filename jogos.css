@@ -66,7 +66,7 @@ nav a:hover {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto; /* Centraliza o container */
+    margin: 0 auto; 
     padding: 20px;
 }
 
@@ -80,7 +80,7 @@ nav a:hover {
 
 .cards-wrapper {
     display: flex;
-    justify-content: center; /* Centraliza os cards */
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;

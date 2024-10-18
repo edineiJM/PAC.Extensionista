@@ -99,8 +99,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
     padding: 10px 0;
+    
+}
+p .text {
+    color: #ffffff;
 }
 
 .text {
@@ -115,7 +119,7 @@ body {
     background: linear-gradient(45deg, #000000, #ffffff,#000000);
     background-size: 400% 100%;
     animation: degrade 10s linear infinite alternate;
-    -webkit-background-clip: text;
+   /*  -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
 @keyframes degrade {

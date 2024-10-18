@@ -10,7 +10,6 @@
 
 body {
     margin: 0;
-/*     background-image: url('img/paisagem.png'); */
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -51,7 +50,7 @@ body {
 }
 
 .header-btn:hover {
-    color: rgb(231, 21, 21);
+    color: rgb(255, 0, 0);
 }
 
   nav {
@@ -77,24 +76,24 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(189, 2, 2);
+    background-color: rgb(218, 98, 231);
     color:rgb(255, 255, 255);
     transition: background-color 0.5s;
 }
 .page1{
-    background-color: rgb(176, 123, 255);
+    background-color: rgb(203, 168, 255);
 }
 .page2{
-    background-color: rgb(115, 79, 205);
+    background-color: rgb(134, 91, 245);
 }
 .page3{
-    background-color: rgb(176, 123, 255);
+    background-color: rgb(203, 168, 255);
 }
 .page4{
-    background-color: rgb(115, 79, 205);
+    background-color: rgb(134, 91, 245);
 }
 .page5{
-    background-color: rgb(176, 123, 255);
+    background-color:rgb(203, 168, 255);
 }
 
 .interface{
