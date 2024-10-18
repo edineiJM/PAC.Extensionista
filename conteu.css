@@ -66,6 +66,12 @@ body {
 .page5 {
     background-color: rgb(176, 123, 255);
 }
+.page6 {
+    background-color: rgb(124, 37, 255);
+}
+.page7 {
+    background-color: rgb(176, 123, 255);
+}
 
 .interface {
     height: 100vh;
