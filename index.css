@@ -50,10 +50,10 @@ body {
     transition: color 0.3s;
 
 }
-
 .header-btn:hover {
-    color: rgb(255, 0, 0);
+    color: rgb(104, 1, 136);
 }
+
 
 .menu {
     background: rgba(0, 0, 0, 0);
