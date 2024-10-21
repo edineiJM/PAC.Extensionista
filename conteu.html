@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/LogoCaf.png" />
+    <link rel="shortcut icon" href="img/catolica.jpg" />
     <link rel="stylesheet" href="conteu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,82 +24,89 @@
             </header>
 
     <div class="interface">
+
         <section class="page1">
-            <h1>Introdução à Linguagem C++</h1>
-            <p>Vamos explorar a introdução à linguagem C e o passo a passo para aprender essa linguagem fundamental. A linguagem C é uma das mais influentes e amplamente utilizadas na programação, especialmente para desenvolvimento de sistemas e aplicativos de baixo nível. <br>
-                Introdução à Linguagem C
-                
-                A linguagem C foi criada por Dennis Ritchie na década de 1970 nos Laboratórios Bell. É conhecida por sua eficiência e controle de baixo nível sobre hardware, o que a torna ideal para sistemas operacionais, compiladores e aplicações que requerem desempenho.
+            <h1>Introdução à Linguagem C</h1>
+            <p>Vamos explorar a introdução à linguagem C e o passo a passo para aprender essa linguagem fundamental. É uma das mais influentes e amplamente utilizada na programação, especialmente para desenvolvimento de sistemas e aplicativos de baixo nível. <br><br>
+            A linguagem C foi criada por Dennis Ritchie na década de 1970 nos Laboratórios Bell. É conhecida por sua eficiência e controle de baixo nível sobre hardware, o que a torna ideal para sistemas operacionais, compiladores e aplicações que requerem desempenho.
             </p>
-            <br>
-            <img src="img/c++-removebg-preview.png" alt="c">
-            
+
+        <div class="image-container">
+            <img src="img/Dennis.jpg" alt="Dennis">
+            <img src="img/C.png" alt="C">
+        </div>
+
         </section>
+
         <section class="page2">
             <h1>Biblioteca Basica</h1>
             <p>Em C, as bibliotecas são coleções de funções e macros que podem ser usadas para realizar várias operações, como manipulação de strings, operações matemáticas, controle de entrada/saída, manipulação de arquivos, entre outras. Elas ajudam a evitar que os programadores tenham que reinventar a roda ao criar código para funcionalidades comuns. <br>
         
-                Aqui estão algumas das bibliotecas básicas mais utilizadas na linguagem C: <br>
+                Aqui estão algumas das bibliotecas básicas mais utilizadas na linguagem C: <br><br>
                 
-                1. <stdio.h> (Standard Input/Output Library) <br>
-                A biblioteca padrão para entrada e saída. Ela fornece funções para leitura e escrita de dados. <br>
+                1. < stdio.h > (Standard Input/Output Library) <br>
+                A biblioteca padrão para entrada e saída. Ela fornece funções para leitura e escrita de dados. <br><br>
                 
-                Funções principais: <br>
-                printf: Escreve dados na saída padrão (geralmente a tela). <br>
-                scanf: Lê dados da entrada padrão (geralmente o teclado). <br>
-                fprintf: Escreve dados em um arquivo ou stream específico. <br>
-                fscanf: Lê dados de um arquivo ou stream específico. <br>
-                fopen, fclose: Abre e fecha arquivos. <br>
-                fread, fwrite: Lê e escreve dados binários em arquivos. <br>
+                Funções principais: <br><br>
+                printf: Escreve dados na saída padrão (geralmente a tela). <br><br>
+                scanf: Lê dados da entrada padrão (geralmente o teclado). <br><br>
+                fprintf: Escreve dados em um arquivo ou stream específico. <br><br>
+                fscanf: Lê dados de um arquivo ou stream específico. <br><br>
+                fopen, fclose: Abre e fecha arquivos. <br><br>
+                fread, fwrite: Lê e escreve dados binários em arquivos. <br><br>
                 fgets, fputs: Lê e escreve strings em arquivos. <br>
                 </p>
-        
+
         </section>
         
         <section class="page3">
             <h1>Coleta de Informações</h1>
             
-            <p>Tipos de Dados <br>
-                int: Números inteiros (ex: 5, -3). <br>
-                float: Números com ponto decimal (ex: 3.14). <br>
-                char: Um único caractere (ex: 'a'). <br>
-                double: Números com mais precisão <br>
-                
-                Para coletar informações do usuário em um programa e usá-las depois, precisamos pedir essas informações de uma forma específica. Para isso, usamos algo chamado scanf, que segue o padrão scanf("x", &y);. Aqui, x representa o tipo de dado que queremos coletar, como texto ou números, e y é o nome da caixinha (variável) onde vamos guardar essa informação.</p>
+            <p>Para coletar informações do usuário em um programa e usá-las depois, precisamos pedir essas informações de uma forma específica. Para isso, usamos algo chamado scanf, que segue o padrão scanf("x", &y);.
+            Aqui, x representa o tipo de dado que queremos coletar, como texto ou números, e y é o nome da caixinha (variável) onde vamos guardar essa informação. <br><br>
+            Tipos de Dados: <br><br>
+            int: Números inteiros (ex: 5, -3). <br>
+            float: Números com ponto decimal (ex: 3.14). <br>
+            char: Um único caractere (ex: 'a'). <br>
+            double: Números com mais precisão <br>
+            </p>
+
+            <div class="image-container2">
+                <img src="img/int.png" alt="int">
+                <img src="img/floatdouble.png" alt="float">
+                <img src="img/char.png" alt="char">
+            </div>
 
         </section>
 
         <section class="page4">
             <h1>Declaração de variável</h1>
-            <p>Declarar variáveis em programação é como dar nome a caixinhas onde guardamos diferentes tipos de informações. Cada caixinha tem um nome e um tipo específico de coisa que pode guardar, como números inteiros, números com vírgula ou palavras.
-
-                <br> Por exemplo, se você quiser guardar a idade de alguém, que é um número inteiro, você cria uma caixinha do tipo int e dá a ela um nome, como idade. Assim, você diz ao computador que aquela caixinha vai guardar um número inteiro. Da mesma forma, se quiser guardar uma altura, que pode ter vírgula (como 1.75), você usa uma caixinha do tipo float. E, se precisar guardar o nome de uma pessoa, você usa uma caixinha chamada char, que é usada para armazenar letras ou uma sequência de letras.
-                
-                Depois de criar as caixinhas, você pode colocar valores nelas. Se você declarou uma variável chamada idade, pode guardar o valor 10 nela. Da mesma forma, se você declarou uma variável chamada altura, pode guardar o valor 1.75. Essas informações podem ser usadas pelo programa sempre que precisar.
-                
-                No final das contas, declarar variáveis é basicamente dizer ao computador: "Ei, eu vou precisar guardar essa informação aqui, e é desse tipo, então crie um espaço para ela!". Isso ajuda o computador a organizar e usar as informações de maneira eficiente durante o programa.
-                
-                
-                
-                </p>
+            <p>Declarar variáveis em programação é como dar nome a caixinhas onde guardamos diferentes tipos de informações. Cada caixinha tem um nome e um tipo específico de coisa que pode guardar, como números inteiros, números com vírgula ou palavras. <br>
+            Por exemplo, se você quiser guardar a idade de alguém, que é um número inteiro, você cria uma caixinha do tipo int e dá a ela um nome, como idade. Assim, você diz ao computador que aquela caixinha vai guardar um número inteiro.<br>Da mesma forma, se quiser guardar uma altura, que pode ter vírgula (como 1.75), você usa uma caixinha do tipo float. E, se precisar guardar o nome de uma pessoa, você usa uma caixinha chamada char, que é usada para armazenar letras ou uma sequência de letras. <br>
+            Depois de criar as caixinhas, você pode colocar valores nelas, se você declarou uma variável chamada idade, pode guardar o valor 10 nela. Da mesma forma, se você declarou uma variável chamada altura, pode guardar o valor 1.75.<br>
+            No final das contas, declarar variáveis é basicamente dizer ao computador: "Ei, eu vou precisar guardar essa informação aqui, e é desse tipo, então crie um espaço para ela!". Isso ajuda o computador a organizar e usar as informações de maneira eficiente durante o programa.</p>
+           
+            <div class="image-container3">
+                <img src="img/variaveis.png" alt="variáveis" height="250" width="450">
+            </div>
         </section>
+
         <section class="page5">
 
             <h1>Condicional</h1>
-            <p> Agora vamos para condicional, que ira verificar se a informação obedece uma instrução, efetue uma sequencia de códigos, caso contrario, faca outra, veja no exemplo a seguir
-                Vamos utilizar sempre if (verifica se) ou else (para caso a informação se não seja atendida)
-                Vamos solicitar a idade de uma pessoa, se ela for maior de 18 anos, o programa deve imprimir MAIOR DE IDADE, caso contrario, MENOR DE IDADE.
-                {
-                Int idade;
-                Printf(“Digite sua idade”);
-                Scanf(“%i”, &idade);
+            <p> Agora vamos para condicional, que ira verificar se a informação obedece uma instrução, efetue uma sequencia de códigos, caso contrario, faca outra, veja no exemplo a seguir: <br><br>
+                Vamos utilizar sempre if (verifica se) ou else (para caso a informação se não seja atendida). Vamos solicitar a idade de uma pessoa, se ela for maior de 18 anos, o programa deve imprimir MAIOR DE IDADE, caso contrario, MENOR DE IDADE.<br><br>
+                int main(){ <br>
+                int idade; <br>
+                printf(“Digite sua idade”); <br>
+                scanf(“%i”, &idade); <br><br>
                 
-                If (idade>=18)
-                Printf(“MAIOR DE IDADE”);
-                Else
-                Printf(“MENOR DE IDADE”);
-                Return 0;
-                }
+                if (idade>=18) <br>
+                printf(“MAIOR DE IDADE”); <br>
+                else <br>
+                printf(“MENOR DE IDADE”); <br>
+                return 0; <br>
+                } <br><br>
                 Então nesse caso, ele ira solicitar a idade, e verificar se a idade informada é maior ou igual a 18,
                 e ira imprimir MAIOR DE IDADE, caso contrario MENOR DE IDADE.</p>
             
@@ -107,26 +114,41 @@
             
         <section class="page6">
             <h1>Laços de repetição</h1>
-            <p>Os laços de repetição são ferramentas fundamentais na programação que permitem que um computador execute um bloco de código várias vezes sem precisar reescrever o mesmo código repetidamente. Eles são muito úteis quando precisamos repetir uma ação, seja um número fixo de vezes ou até que uma condição específica seja atendida.
-
-                Existem três tipos principais de laços em C:
-                
-                Laço for: Este laço é ideal quando sabemos exatamente quantas vezes queremos repetir uma ação. Ele possui três partes principais: o ponto de partida (onde a repetição começa), a condição (que determina quando o laço deve parar) e a atualização (que ajusta a variável de controle a cada repetição). O laço for é eficiente e fácil de entender, pois todos esses elementos estão reunidos em uma única linha.
-                
-                Laço while: Este tipo de laço é usado quando não sabemos exatamente quantas vezes vamos repetir a ação, mas sabemos que queremos continuar enquanto uma condição for verdadeira. O laço while verifica essa condição antes de executar o código dentro dele. Isso significa que, se a condição for falsa desde o início, o código dentro do laço não será executado nem uma vez.
-                
-                Laço do...while: O laço do...while é semelhante ao while, mas com uma diferença importante: ele garante que o bloco de código seja executado pelo menos uma vez. Isso ocorre porque a condição é verificada após a execução do código. Portanto, mesmo que a condição seja falsa logo no início, o código dentro do laço será executado uma vez antes que a verificação aconteça.</p>
+            <p>Os laços de repetição são ferramentas fundamentais na programação que permitem que um computador execute um bloco de código várias vezes sem precisar reescrever o mesmo código repetidamente. Eles são muito úteis quando precisamos repetir uma ação, seja um número fixo de vezes ou até que uma condição específica seja atendida. <br><br>
+            Existem três tipos principais de laços em C: <br><br>
+            <b>Laço for: </b>Este laço é ideal quando sabemos exatamente quantas vezes queremos repetir uma ação. Ele possui três partes principais: o ponto de partida (onde a repetição começa), a condição (que determina quando o laço deve parar) e a atualização (que ajusta a variável de controle a cada repetição). O laço for é eficiente e fácil de entender, pois todos esses elementos estão reunidos em uma única linha. <br><br>
+            <b>Laço while: </b>Este tipo de laço é usado quando não sabemos exatamente quantas vezes vamos repetir a ação, mas sabemos que queremos continuar enquanto uma condição for verdadeira. O laço while verifica essa condição antes de executar o código dentro dele. Isso significa que, se a condição for falsa desde o início, o código dentro do laço não será executado nem uma vez. <br><br>
+            <b>Laço do...while: </b>O laço do...while é semelhante ao while, mas com uma diferença importante: ele garante que o bloco de código seja executado pelo menos uma vez. Isso ocorre porque a condição é verificada após a execução do código. Portanto, mesmo que a condição seja falsa logo no início, o código dentro do laço será executado uma vez antes que a verificação aconteça.</p>
 
         </section>
+
         <section class="page7">
             <h1>Conteúdo adicional</h1>
-            <p>Video para aprofundar conhecimentos adicionais: <br>
-                <ul>
-                    <li><a href="https://youtu.be/2w8GYzBjNj8?si=pxnrY2Jq858il_iP">Video de introdução à linguagem C</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=QgE1zh0xCns ">Como utilizar a ferramenta DEV C++ </a></li>
-                    <li><a href="https://www.youtube.com/watch?v=eK9lfMmkDe0&list=PLpaKFn4Q4GMOBAeqC1S5_Fna_Y5XaOQS2&index=4">Aprenda a mostrar mensagens em liguagem C</a></li>
-                </ul>
-            </p>
+            <div class="gallery">
+                <div class="container">
+                    <a href="https://youtu.be/2w8GYzBjNj8?si=fTOebhEPUz5r2KhG" target="_blank" class="image-link">
+                    <img src="img/começo.jpg" alt="Draw.io">
+                    </a>
+                </div>
+<br>
+                <div class="container">
+                    <a href="https://youtu.be/QgE1zh0xCns?si=eM3qAsgmqyT6kVyn" target="_blank" class="image-link">
+                    <img src="img/aprendausar.jpg" alt="Draw.io">
+                    </a>
+                </div>
+<br>
+                <div class="container">
+                    <a href="https://youtu.be/eK9lfMmkDe0?si=UwZce8ptgszMzXXX" target="_blank" class="image-link">
+                    <img src="img/saida.jpg" alt="Draw.io">
+                    </a>
+                </div>
+<br>
+                <div class="container">
+                    <a href="https://youtu.be/9NWKZAUjQbE?si=UQzJ_RtzftXzCODw" target="_blank" class="image-link">
+                    <img src="img/draw.jpg" alt="Draw.io">
+                    </a>
+                </div>
+            </div>
 
         </section>
 

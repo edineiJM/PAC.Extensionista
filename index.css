@@ -48,10 +48,10 @@ body {
     font-weight: 900;
     font-size: x-large;
     transition: color 0.3s;
-
 }
+
 .header-btn:hover {
-    color: rgb(104, 1, 136);
+    color: rgb(0, 195, 255);
 }
 
 .menu {

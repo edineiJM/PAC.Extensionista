@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+*{ 
+    margin: 0px;
+    padding: 0px;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+.body{
+    background-color: rgb(82, 70, 88);
+    color: #ffffff;
+}
+
+main {
+    max-width: 60%;
+    margin: auto;
 }
 
 .header {
@@ -42,28 +52,80 @@
 }
 
 .header-btn:hover {
-    color: rgb(104, 1, 136);
+    color: rgb(0, 195, 255);
 }
 
-section {
+.esqPai {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 70vh;
-    color: #000000;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.esqIMG {
+    width: 250px;
+    height: 250px;
+}
+
+.esqTXT{
+    padding-left: 20px;
+    text-align: justify;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    margin: 30px 0;
-    font-size: 3em;
+  font-weight: bold;
 }
 
-p {
-    max-width: 800px;
-    text-align: center;
-    padding: 20px;
-    margin-top: auto;
-    font-size: x-large;
+.dirPai {
+  display: flex;
+  align-items: flex-start;
+  text-align: end;
+  justify-content: space-between;
+}
+
+.dirIMG{
+  order: 2
+}
+
+.dirTXT {
+  text-align: justify;
+  order: 1;
+  padding-right: 20px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 70px;
+}
+ img{
+    clip-path: circle(50%);
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+}
+
+.container > div {
+    padding: 10px;
+}
+
+.image-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.image-link img {
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.image-link:hover {
+    transform: scale(1.05);
 }

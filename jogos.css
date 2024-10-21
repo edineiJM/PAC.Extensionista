@@ -3,8 +3,12 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: rgb(82, 70, 88);
 }
 
 .header {
@@ -42,7 +46,7 @@
 }
 
 .header-btn:hover {
-    color: rgb(104, 1, 136);
+    color: rgb(0, 195, 255);
 }
 
 .container {
@@ -55,7 +59,7 @@
     font-size: 34px;
     font-weight: bold;
     margin-top: 20px;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
 }
 
